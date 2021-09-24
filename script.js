@@ -13,7 +13,7 @@ let highscores = document.querySelector("#highscores");
 let playerInitials = document.querySelector("#player-initials");
 let playerScore = document.querySelector("#player-score");
 let timecontainer = document.querySelector(".timer");
-let secondsLeft = 50;
+let secondsLeft = 60;
 
 let questions = [
 	{
@@ -128,7 +128,7 @@ function checkAnswer(e) {
 				crowdCheer();
 				setTimeout(crowdIdle, 750);
 			} else {
-				secondsLeft = secondsLeft - 5;
+				secondsLeft = secondsLeft - 10;
 				splat.hidden = false;
 				setTimeout(hide, 500);
 				crowdIdle();
@@ -175,7 +175,7 @@ function showScore() {
 }
 
 function playAgain() {
-	secondsLeft = 50;
+	secondsLeft = 60;
 	ql = questions.length;
 	qindex = 0;
 	restartBtn.hidden = true;
