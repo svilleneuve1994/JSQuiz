@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Quiz Game</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>  
+
+    <main id="main">
+
+      <header class="header">
+        <div class="highscores-link">Highscores</div>
+        <div class="quiz-title">
+          <h1>Quiz Time!</h1>
+          <p>Answer correctly or get slimed!</p>
+        </div>
+        <div class="timer"></div>
+      </header>
+
+      <div id="splat"></div>
+
+      <div id="quizbox">
+        <div id="questionbox">question</div>
+        <div id="optionsbox">
+          <div class="option" id="optionA">option A</div>
+          <div class="option" id="optionB">option B</div>
+          <div class="option" id="optionC">option C</div>
+          <div class="option" id="optionD">option D</div>
+        </div>
+      </div>
+
+      <div id="scorecard">
+        <div id="scoretext" class="pb-1">scoreboard</div>
+        <form method="POST">
+          <label for="initials" class="pb-1">Enter Your Initials!</label>
+          <div class="pb-1">
+            <input type="text" name="initials" id="initials" maxlength="3" minlength="2"/>
+          </div>
+          <button id="submit-btn">Submit</button>
+        </form>
+      </div>
+
+      <div id="highscores">
+        <h2>Highscores</h2>
+        <p><strong>Initials:</strong> <span id="player-initials"></span></p>
+        <p><strong>Points:</strong> <span id="player-score"></span></p>
+      </div>
+
+      <div class="btn-container">
+        <a id="restart-btn" href="javascript:void(0)" onclick="playAgain()">Restart?</a>
+      </div>
+      <div class="btn-container">
+        <a id="start-btn" href="javascript:void(0)" onclick="startQuiz()">Start!</a>
+      </div>
+    </main>
+    <footer id="crowd-footer"></footer>
+
+    <script src="./script.js"></script>
+</body>
+</html>
