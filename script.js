@@ -61,7 +61,7 @@ quizbox.hidden = true;
 scorecard.hidden = true;
 highscores.hidden = true;
 splat.hidden = true;
-timecontainer.textContent = "Time: " + 50;
+timecontainer.textContent = "Time: " + 60;
 
 let startQuiz = function() {
 	startTimer();
