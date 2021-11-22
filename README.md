@@ -1,6 +1,6 @@
 # My Javascript Quiz Game
 
-![Quiz Game Preview](./quiz-previw.png)
+![Quiz Game Preview](./quiz-preview.png)
 
 # Rules:
 # Your score is equal to the number of seconds left on the clock when you finish the quiz.
